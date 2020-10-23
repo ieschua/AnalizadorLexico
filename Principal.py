@@ -31,7 +31,7 @@ if __name__ == '__main__':
     Analizador = AnalizadorLexico()
     
     def getANSIC ():
-        import_file_path = filedialog.askopenfilename()
+        import_file_path = filedialog.askopenfilename(title = "Seleccionar Archivo",filetypes = ((".c Files","*.c"),))
         Buffer.cargar_buffer(import_file_path)
         
         # Listas para cada lista devuelta lista de la función tokenizar
